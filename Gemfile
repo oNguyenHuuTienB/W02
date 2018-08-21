@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
 gem "rails", "~> 5.1.6"
 # Use sqlite3 as the database for Active Record
-gem "sqlite3"
+# gem "sqlite3"
 # Use Puma as the app server
 gem "puma", "~> 3.7"
 # Use SCSS for stylesheets
@@ -35,6 +35,11 @@ gem "jbuilder", "~> 2.5"
 gem "dotenv-rails"
 gem "slim"
 gem "mysql2"
+gem "closure_tree"
+gem "jquery-rails"
+gem "jquery-ui-rails"
+
+gem "rails-assets-jstree", source: "https://rails-assets.org"
 
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
