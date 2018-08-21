@@ -12,4 +12,15 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require jquery
+//= require jquery_ujs
+//= require jstree.js
 //= require_tree .
+$(document).on("ready page:load", function(){
+  $('.container').jstree({
+    plugins: ['themes'],
+    themes: {
+      theme: 'default'
+    }
+  });
+});

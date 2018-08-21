@@ -1,6 +1,5 @@
 GEM
   remote: https://rubygems.org/
-  remote: https://rails-assets.org/
   specs:
     actioncable (5.1.6)
       actionpack (= 5.1.6)
@@ -39,6 +38,8 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    acts_as_tree (2.7.1)
+      activerecord (>= 3.0.0)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
@@ -127,9 +128,6 @@ GEM
       bundler (>= 1.3.0)
       railties (= 5.1.6)
       sprockets-rails (>= 2.0.0)
-    rails-assets-jquery (3.3.1)
-    rails-assets-jstree (3.3.5)
-      rails-assets-jquery (>= 1.9.1)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -204,6 +202,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts_as_tree
   byebug
   capybara (~> 2.13)
   closure_tree
@@ -217,7 +216,6 @@ DEPENDENCIES
   pry-rails
   puma (~> 3.7)
   rails (~> 5.1.6)
-  rails-assets-jstree!
   sass-rails (~> 5.0)
   selenium-webdriver
   slim

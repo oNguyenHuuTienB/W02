@@ -38,8 +38,7 @@ gem "mysql2"
 gem "closure_tree"
 gem "jquery-rails"
 gem "jquery-ui-rails"
-
-gem "rails-assets-jstree", source: "https://rails-assets.org"
+gem "acts_as_tree"
 
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
