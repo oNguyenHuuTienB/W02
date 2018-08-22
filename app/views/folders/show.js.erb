@@ -1,0 +1,2 @@
+$("#js-FolderContentList").html("<%= j render partial: 'folder', collection: @folder_contents, as: :folder %>")
+$("#js-FolderContentList").append("<%= j render partial: 'file', collection: @files, as: :file %>")
