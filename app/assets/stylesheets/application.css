@@ -12,4 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require jstree
+ *= require magnific-popup
+ *= require bootstrap-datetimepicker
  */
