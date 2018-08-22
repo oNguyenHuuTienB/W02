@@ -1,0 +1,7 @@
+tr
+  td.column-20
+    = check_box_tag "folder_ids[]", folder.id, nil, id: "#{folder.id}", class: "js-checkbox"
+    = label_tag "#{folder.id}", ""
+  td.column-30.js-folderName = folder.name
+  td.column-30 = folder.public_date.strftime("%y.%m.%d %H:%M")
+  td.column-20 = folder.memo

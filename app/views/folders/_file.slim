@@ -1,0 +1,7 @@
+tr
+  td.column-20
+    = check_box_tag "file_ids[]", file.id, nil, id: "#{file.id}", class: "js-checkbox"
+    = label_tag "#{file.id}", ""
+  td.column-30 = file.name
+  td.column-30 -
+  td.column-20 = file.memo
