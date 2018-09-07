@@ -1,1 +1,25 @@
 #js-FolderTree
+= button_tag "Create Folder", id: "js-new-folder"
+#js-new-folder-form.mfp-hide
+  = form_for Folder.new, url: folders_path, html: {class: "js-new-folder"} do |f|
+    table
+      tbody
+        tr
+          th
+            | 名称
+          td
+            span
+              = f.text_field :name, placeholder: "Folder name"
+          th
+            | 公開日
+          td
+            span
+              = f.text_field :public_date, placeholder: "public date", class: "datetime-picker"
+          th
+            | メモ
+          td
+            span
+              = f.text_area :memo, placeholder: "Memo"
+          = f.hidden_field :parent_id, value: "", class: "js-folder-parent"
+    .submit-new-folder
+      = f.submit "更新", class: "js-submit-folder"

@@ -15,4 +15,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jstree
+//= require magnific-popup
+//= require moment
+//= require bootstrap-datetimepicker
+//= require new_folder.js
 //= require_tree .
